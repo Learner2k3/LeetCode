@@ -4,12 +4,14 @@ class Solution {
         for(List<String> path : paths){
             set.add(path.get(0));
         }
-         for(List<String> path : paths){
-             String des = path.get(1);
-             if(!set.contains(des)){
-                 return des;
-             }
-         }
-        return "";
+          for(List<String> path : paths){
+              String des = path.get(1);
+              if(!set.contains(des)){
+                  return des;
+              }
+          }     
+          
+        return " ";
+        
     }
 }
